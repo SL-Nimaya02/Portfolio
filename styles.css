@@ -30,7 +30,7 @@ section {
 .header::before {
   content: "";
   position: absolute;
-  background: black;
+  background: #00094B;
   top: 0;
   left: 0;
   width: 100%;
@@ -47,7 +47,7 @@ section {
   background: linear-gradient(
     90deg,
     transparent,
-    rgb(141, 141, 141),
+    white,
     transparent
   );
   transition: 1s;
@@ -72,8 +72,9 @@ section {
 }
 .nav-link.active,
 .nav-link:hover {
-  background: gray;
+  background: white;
   transition: 0.5s;
+  color: #000;
 }
 #check {
   display: none;
@@ -92,6 +93,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url('asset/pic7.png');
 }
 .home-content {
   margin-right: 60px;
@@ -99,27 +101,28 @@ section {
 .home-content h1 {
   font-size: 3.2rem;
   font-weight: 700;
+  color: #ffffff;
 }
 .home-content h3 {
   font-size: 2.5rem;
   font-weight: 200;
+  color: #ffffff;
 }
 .home-content h1:nth-of-type(2) {
   margin-bottom: 2rem;
 }
 .home-img img {
-  width: 25vw;
+  width: 49vw;
+  margin-bottom: -39px;
   animation: floatImage 4s ease-in-out infinite;
-  border: 2.5px solid #000;
-  border-radius: 2%;
 }
 .btn {
   display: inline-block;
   padding: 0.5rem 2.5rem;
-  background: #000;
+  background: #ffffff;
   border-radius: 0.5rem;
   font-size: 1.6rem;
-  color: white;
+  color: rgb(0, 0, 0);
   letter-spacing: 0.1rem;
   font-weight: 400;
   vertical-align: middle;
@@ -130,17 +133,18 @@ section {
 
 .about {
   justify-content: center;
-  background: rgb(216, 216, 216);
+  background: white;
+  color: #00094B;
 }
 .about-all {
   display: flex;
   align-items: center;
   gap: 2rem;
-  background: rgb(216, 216, 216);
+  background: white;
 }
 .about-img img {
   width: 35vw;
-  border: 2.5px solid #000;
+  border: 2.5px solid #00094B;
   border-radius: 2%;
 }
 .heading {
@@ -151,10 +155,12 @@ section {
 .about-content h2 {
   text-align: left;
   line-height: 1.2;
+  color: #00094B;
 }
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+  color: #00094B;
 }
 
 /*SKILLS*/
@@ -162,9 +168,14 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
-
+.skills .heading{
+  color: #fff;
+}
+.skills{
+  background-color: #00094B;
+}
 .frontend,
 .backend,
 .ui-ux,
@@ -173,9 +184,10 @@ section {
   align-items: center;
   display: flex;
   padding: 20px;
-  background-color: #000000;
+  background-color: #ffffff;
   border-radius: 10px;
   font-size: 25px;
+  color: #00094B;
 }
 
 .frontend,
@@ -194,10 +206,11 @@ section {
 }
 /*PROJECTS*/
 .projects{
-  background:gray;
+  background:white;
 }
 .projects h2{
   margin-bottom: 4rem;
+  color: #00094B;
 }
  
 .project-container{
@@ -209,17 +222,19 @@ section {
 .project-container .project-box{
   position: relative;
   border-radius: 2rem;
-  box-shadow: 0 0 1rem gray;
+  box-shadow: 0 0 1rem rgb(1, 8, 107);
   overflow: hidden;
   display: flex;
 }
 .project-box img{
   width: 100%;
   transition: .5s ease;
-  opacity: 0.7;
+  border:0.3rem solid #00094B ;
+  border-radius: 2rem;
 }
 .project-box:hover img{
   transform:scale(1.1);
+  opacity: 0.01;
 }
 .project-box .project-layer{
   position: absolute;
@@ -227,7 +242,6 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0,0,0,0.1),var(--main-color));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,10 +256,12 @@ section {
 }
 .project-layer h4{
   font-size: 1.5rem;
+  color: #00094B;
 }
 .project-layer p{
   font-size: 1rem;
   margin: .3rem 0 1rem;
+  color: #00094B;
 }
 .project-layer a {
   display: inline-flex;
@@ -253,12 +269,11 @@ section {
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background: var(--text-color);
+  color: #00094B;
   border-radius: 50%;
 }
 .project-layer a  i{
- font-size: 2rem;
- color: var(--snd-bg-color);
+ font-size: 40rem;
 }
 .btn-projects-container{
   text-align: center;
@@ -266,8 +281,8 @@ section {
 .btn-projects {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #000000;
-  border-radius: 5px;
+  background-color: #00094B;
+  border-radius: 10px;
   font-size: 26px;
   color: white; 
   text-decoration: none;
@@ -279,12 +294,20 @@ section {
   display: inline-block;
 }
 
+
 /*CONTACT*/
 .contact-container{
   height: 65vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  
+}
+.contact .heading{
+  color: #ffffff;
+}
+.contact{
+  background-color: #00094B;
 }
 .contact-left{
   display: flex;
@@ -295,7 +318,7 @@ section {
 .contact-inputs{
   width: 400px;
   height: 50px;
-  border: 1px solid #000;
+  border: 1px solid #00094B;
   padding-left: 25px;
   font-weight: 500;
   border-radius: 10px;
@@ -306,7 +329,7 @@ section {
   border-radius: 20px;
 }
 .contact-inputs:focus{
-  border: 2px solid black;
+  border: 2px solid  #00094B;
 }
 .contact-inputs::placeholder{
   color: gray;
@@ -316,18 +339,22 @@ section {
   align-items: center;
   padding: 15px 30px;
   font-size: 16px;
-  color: #fff;
+  color:#00094B;
   gap: 10px;
-  border: #000;
+  border: black;
   border-radius: 10px;
-  background: black;
+  background: #ffffff;
   cursor: pointer;
 }
 .contact-right{ 
- height: 58vh;
+ height: 53vh;
 }
 .contact-right .contact-para{
   margin: 38px 0 ;
+  color: #fff;
+}
+.contact-img{
+  color: #fff;
 }
 .contact-right .contact-para img{
   vertical-align: middle;
@@ -352,8 +379,8 @@ section {
   height: 40px; 
   line-height: 40px; 
   text-align: center; 
-  background-color: #000000; 
-  color: #fff; 
+  background-color:#00094B; 
+  color: white; 
   border-radius: 50%; 
   text-decoration: none; 
 }
@@ -363,34 +390,39 @@ section {
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 3rem 9%;
-  background: #000;
   justify-content: center;
 }
+
 .footer-nav{
   margin: 30px 0;
+  margin-top: -30px;
 }
 .footer-nav ul{
   display: flex;
-  
 }
-.footer ul li a{
-  color: white;
+.footer .li{
+  text-align: center;
+  color: #00094B;
   margin: 20px;
   text-decoration: none;
   font-size: 1.3em;
   opacity: 0.7;
   transition: 0.5s;
 }
-.footer ul li a:hover{
+
+.footer  .li:hover{
   opacity: 1;
+  color: #00094B;
 }
 .footer-bottom{
-  background-color: #000;
+  
   padding: 20px;
   text-align: center;
+  margin-top: -40px;
+  margin-bottom: -30px;
 }
 .footer-bottom p{
-  color: #fff;
+  color: #00094B;
 }
 .designer{
   opacity: 0.7;
@@ -400,7 +432,7 @@ section {
   margin: 0px 5px;
 }
 /*BREAKPOINTS*/
-@media (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .header {
     padding: 1.3rem 5%;
   }
@@ -435,38 +467,43 @@ section {
   .about-content p {
     font-size: 1.1rem;
   }
-  
+  .skills-container{
+    justify-content: center; /* Horizontally center the container */
+    align-items: center; /* Vertically center the container */
+  }
   .frontend,
   .backend,
   .ui-ux,
   .other {
     padding: 10px;
     font-size: 20px;
-    
   }
   .frontend,
   .ui-ux {
-    grid-column: 1 / span 1; /
+    grid-column: 1 / span 2; /
   }
   
   .backend,
   .other {
-    grid-column: 2 / span 2; 
+    grid-column: 1 / span 2; 
+    text-align: center;
   }
   .project-layer h4{
-    font-size: 0.8rem;
+    font-size: 2rem;
   }
   .project-layer p{
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   .technology{
     display: inline-block;
     width: auto;
     margin-right: 10px;
   }
-  
+  .project-container{
+    grid-template-columns: repeat(2,1fr);
+  }
 }
-@media (max-width: 1280px) {
+@media only screen and (max-width: 1280px) {
   .contact-right{ 
     height: 63vh;
     font-size: 20px;
@@ -477,8 +514,11 @@ section {
   .technology{
     display: inline-block;
   }
+  .project-container{
+    grid-template-columns: repeat(2,1fr);
+  }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .icons {
     display: inline-flex;
   }
@@ -491,20 +531,25 @@ section {
   #check:checked ~ .icons #close-icon {
     display: block;
   }
+  .home-img img {
+    width: 40vw;
+    margin-bottom: 0px;
+    animation: floatImage 4s ease-in-out infinite;
+  }
   .navbar {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
     height: 0;
-    background: rgb(151, 151, 151);
+    background: rgb(255, 255, 255);
     overflow: hidden;
     transition: 0.3s ease;
   }
   .nav-link.active,
   .nav-link:hover {
     background: none;
-    color: black;
+    color:#021394;
   }
   #check:checked ~ .navbar {
     height: 17.7rem;
@@ -515,7 +560,7 @@ section {
     margin: 1.5rem 0;
     text-align: center;
     transform: translateY(-5px);
-
+    color: #00094B;
     transition: 0.3s ease;
   }
   #check:checked ~ .navbar {
@@ -543,4 +588,74 @@ section {
   .technology{
     display: inline-block;
   }
+  .project-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .frontend,
+  .ui-ux {
+    grid-column: 1 / span 2; /
+  }
+  
+  .backend,
+  .other {
+    grid-column: 1 / span 2; 
+    text-align: center;
+  }
+  .contact-container {
+    margin-top: 20px;
+    flex-direction: column; /* Change flex direction to column for smaller screens */
+    align-items: center; /* Center items horizontally */
+}
+.contact-para {
+  margin: 0 10px; /* Add margin to create space between the items */
+}
+.contact-right {
+    font-size: 10px;
+    margin-top: 20px; /* Add space between contact-container and contact-right */
+    display: flex; /* Set display to flex */
+    justify-content: center;
+}
+ .contact-img{
+  width: 70px;
+  height: 60px;
+ }
+}
+@media only screen and  (max-width:396px){
+  .home .btn{
+    font-size: 16px;
+  }
+  .home-content{
+    padding-left: 80px;
+  }
+ 
+  .contact-inputs{
+    width: 350px;  
+  }
+  .home {
+    flex-direction: column;
+  }
+  .home-img {
+    display: block; /* Display the image */
+    margin-top:-350px; /* Add some spacing between the image and content */
+  }
+  .home-content h1 {
+    font-size: 1.5rem; /* Adjust the font size for h1 */
+  }
+  
+  .home-content h3 {
+    font-size: 1rem; /* Adjust the font size for h3 */
+  }
+  .contact-img{
+    width: 20px;
+    height: 20px;
+  }
+  .contact-right{
+    display: flex;
+    margin-top: 10px;
+  }
+  .right_1,
+  .right_2 {
+    width: 100%;
+    flex: 1; /* Make both divs take up equal space */
+}
 }
