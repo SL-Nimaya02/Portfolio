@@ -697,6 +697,14 @@ font-size: 30px;
   margin-top:450px;
   }
 }
+@media only screen and  (max-width:409px){
+  .home .btn{
+        font-size: 10px;
+      } 
+   .home {
+    flex-direction: column;
+  }
+}
 @media only screen and  (max-width:396px){
   .heading{
     font-size: 25px;
@@ -707,7 +715,9 @@ font-size: 30px;
   .contact-main{
   margin-top:300px;
   }
- 
+  .home .btn{
+    font-size: 9px;
+  }
 }
 @media only screen and  (max-width:335px){
   .heading{
