@@ -730,7 +730,8 @@ font-size: 30px;
     font-size: 0.6rem;
   }
   .contact-container {
-    margin-top: 500px;
+   margin-bottom:10px
+    
 }
 .contact-inputs{
   width: 300px;  
