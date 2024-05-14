@@ -659,3 +659,15 @@ section {
     flex: 1; /* Make both divs take up equal space */
 }
 }
+@media only screen and  (max-width:341px){
+  .home .btn{
+    font-size: 11px;
+  }
+  .home-content h1 {
+    font-size: 1.2rem; /* Adjust the font size for h1 */
+  }
+  
+  .home-content h3 {
+    font-size: 0.8rem; /* Adjust the font size for h3 */
+  }
+}
