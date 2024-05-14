@@ -649,7 +649,9 @@ section {
     width: 20px;
     height: 20px;
   }
- 
+ .contact-main{
+  margin-top:320px;
+  }
   .right_1,
   .right_2 {
     width: 100%;
