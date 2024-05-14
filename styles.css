@@ -649,10 +649,7 @@ section {
     width: 20px;
     height: 20px;
   }
-  .contact-right{
-    display: flex;
-    margin-top: 10px;
-  }
+ 
   .right_1,
   .right_2 {
     width: 100%;
@@ -679,16 +676,11 @@ font-size: 30px;
   .project-layer p{
     font-size: 0.6rem;
   }
-  .contact-container {
-    margin-top: 50px;
-}
+  
 .contact-inputs{
   width: 300px;  
 }
-.contact-right{
-  display: flex;
-  margin-top: -10px;
-}
+
 .right_1,
 .right_2 {
   width: 100%;
@@ -729,17 +721,11 @@ font-size: 30px;
   .project-layer p{
     font-size: 0.6rem;
   }
-  .contact-container {
-   margin-bottom:10px;
-    margin-top:800px;
-}
+
 .contact-inputs{
   width: 300px;  
 }
-.contact-right{
-  display: flex;
- 
-}
+
 .right_1,
 .right_2 {
   width: 100%;
