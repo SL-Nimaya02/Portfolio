@@ -691,6 +691,9 @@ font-size: 30px;
   width: 20px;
   height: 20px;
 }
+   .contact-main{
+  margin-top:300px;
+  }
 }
 @media only screen and  (max-width:396px){
   .heading{
@@ -700,7 +703,7 @@ font-size: 30px;
         font-size: 14px;
       } 
   .contact-main{
-  margin-top:200px;
+  margin-top:300px;
   }
  
 }
@@ -734,4 +737,7 @@ font-size: 30px;
   width: 100%;
   flex: 1; /* Make both divs take up equal space */
 }
+   .contact-main{
+  margin-top:300px;
+  }
 }
