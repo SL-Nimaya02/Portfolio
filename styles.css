@@ -700,6 +700,14 @@ font-size: 30px;
   height: 20px;
 }
 }
+@media only screen and  (max-width:396px){
+  .heading{
+    font-size: 25px;
+      }
+      .home .btn{
+        font-size: 14px;
+      }  
+}
 @media only screen and  (max-width:335px){
   .heading{
 font-size: 30px;
