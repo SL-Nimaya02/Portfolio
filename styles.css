@@ -706,7 +706,10 @@ font-size: 30px;
       }
       .home .btn{
         font-size: 14px;
-      }  
+      } 
+  .contact-container {
+    margin-top: 10px;
+}
 }
 @media only screen and  (max-width:335px){
   .heading{
